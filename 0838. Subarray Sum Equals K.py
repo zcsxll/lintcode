@@ -13,7 +13,7 @@ class Solution:
         zcs = dict()
         cnt = 0
         for s in sum:
-            if (s - k) in zcs.keys(): #加入当前s是[0,6]的和，s-k存在且是[0,3]的和，则说明存在一个和为k的连续区间[4,6]
+            if (s - k) in zcs.keys(): #如果当前s是[0,6]的和，s-k存在且是[0,3]的和，则说明存在一个和为k的连续区间[4,6]
                 cnt += zcs[s - k] #如果[0,4]的和也是s-k，则zcs[s-k] = 2，那么[5,6]也符合要求
             if s in zcs.keys(): #上边两行用到的s-k就是在这里记录的
                 zcs[s] += 1
