@@ -32,7 +32,7 @@ class Solution:
                 right -= 1
             if i <= left:
                 i = left + 1
-            print(a, left, i, right)
+            # print(a, left, i, right)
 
 if __name__ == '__main__':
     a = [1, 0, 1, 2, 0, 2]
